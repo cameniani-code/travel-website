@@ -1,0 +1,190 @@
+.navbar {
+  background-color: #2b3a3e;
+  text-align: center;
+  padding: 20px;
+}
+body {
+  background-color: #009688;
+}
+p {
+  color: #ffffff;
+}
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3 ease;
+}
+.navbar a:hover {
+  color: #ffd700;
+}
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+.hero img {
+  width: 80%;
+  max-width: 900px;
+  border-radius: 8px;
+}
+.hero h1 {
+  color: #ff8c00;
+  font-size: 36px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.hero p {
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: normal;
+}
+.destination:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0.2);
+  transition: transform 0.3 ease, box-shadow 0.3s ease;
+}
+.destination {
+  opacity: 0;
+  width: 90%;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+  text-align: center;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.destinations-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  max-width: 900px;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+.destination img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.popular-destinations {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+@media (min-width: 500px) {
+  .destinations-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .destination {
+    flex: 1 1 280px;
+    max-width: 280px;
+  }
+}
+.exotic-destinations {
+  padding: 40px;
+  text-align: center;
+}
+
+.exotic-destinations h2 {
+  color: #ff8c00;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+.destinations-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer {
+  background-color: #2b3a3e;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.popular-destinations h2 {
+  color: #ff8c00;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.contact {
+  text-align: center;
+  padding: 40px 20px;
+  color: #ffffff;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.contact-form button {
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #ffa733;
+}
+.social {
+  margin-top: 10px;
+}
+.social a {
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 15px;
+}
+.social a:hover {
+  color: #ff8c00;
+}
