@@ -202,3 +202,12 @@ p {
 .social a:hover {
   color: #ff8c00;
 }
+
+html,
+body {
+  height: 100%;
+}
+.footer {
+  position: sticky;
+  bottom: 0;
+}
